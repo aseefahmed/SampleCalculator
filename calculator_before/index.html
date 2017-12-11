@@ -52,26 +52,5 @@
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 
-<script>
-    var screen = "";
-
-    $('.calc-button').click(function(){
-      var value = $(this).text();
-      screen = screen+value;
-      $('.calc-display-input').val(screen);
-      
-    });
-
-    $('.btn_c').click(function(){
-      $('.calc-display-input').val('');
-      screen = "";
-    })
-
-    $('.btn_equal').click(function(){
-       var result = eval(screen); 
-       $('.calc-display-input').val(result);
-       screen = result;
-    })
-</script>
 </body>
 </html>
